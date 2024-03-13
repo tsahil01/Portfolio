@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Navbar } from "@/components/Navbar";
+import { Skills } from "@/components/Skills";
 
 export default function(){
   return <>
@@ -8,6 +9,7 @@ export default function(){
     <div className="flex flex-col md:mt-20 mt-16">
       <Header/>
     </div>
+    <Skills skills={[]}/>
   </div>
   </>
 }
