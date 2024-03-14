@@ -6,6 +6,7 @@ export function Skills({skills}:{skills: string[]}){
             <SkillsFeild feild="Frontend"/>
             <SkillsFeild feild="Backend"/>
             <SkillsFeild feild="Database"/>
+            <SkillsFeild feild="Frontend"/>
         </div>
     </div>
     </>
