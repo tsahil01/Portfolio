@@ -24,13 +24,11 @@ interface SkillsFieldProps {
 
 function SkillsField({ field, technologies }: SkillsFieldProps) {
     return (
-        <div className="flex flex-col gap-4 p-3 h-50 w-50 rounded-xl bg-zinc-800">
-            <div className="text-bold text-zinc-400 md:text-xl text-lg">{field}</div>
-            <div className="grid lg:grid-cols-3 grid-cols-2 lg:gap-4 gap-2">
-                {technologies.map((tech, index) => (
-                    <div key={index} className="bg-zinc-900 p-3 rounded-lg my-auto mx-auto">
-                        {tech}
-                    </div>
+        <div className='flex flex-col bg-zinc-800 gap-4 p-3 w-full rounded-xl'>
+            <div className='font-bold text-zinc-400 md:text-2xl text-xl'>{field}</div>
+            <div className='grid grid-cols-3 gap-3'>
+                {technologies.map((tech, index)=>(
+                    <div key={index} className='bg-zinc-900 py-3 px-2 w-auto rounded-lg'>{tech}</div>
                 ))}
             </div>
         </div>
@@ -38,3 +36,4 @@ function SkillsField({ field, technologies }: SkillsFieldProps) {
 }
 
 export default Skills;
+

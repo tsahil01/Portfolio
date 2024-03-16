@@ -10,6 +10,10 @@ let mySkills = [
   {
     field: "Backend",
     skill: ["NodeJS", "Express", "Hono"]
+  },
+  {
+    field: "Databases",
+    skill : ["PSQL", "MongoDB", "Prisma"]
   }
   ]
 
