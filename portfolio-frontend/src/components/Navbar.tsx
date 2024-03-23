@@ -1,10 +1,12 @@
 export function Navbar(){
     return <>
-    <div className="p-2 rounded-xl bg-zinc-800 flex flex-row gap-4 drop-shadow-xl justify-center mx-auto">
-        <div className="font-bold md:p-2 py-1 text-blue-400">@tsahil01</div>
-        <button className="rounded-lg md:p-2 py-1 hover:bg-zinc-900">Projects</button>
-        <button className="rounded-lg md:p-2 py-1 hover:bg-zinc-900">Contact</button>
-        <button className="rounded-lg md:p-2 py-1 hover:bg-zinc-900">Resume</button>
+    <div className="p-2 rounded-xl bg-zinc-800 flex flex-row gap-2 drop-shadow-xl justify-center mx-auto">
+        <a href="https://github.com/tsahil01" target="_blank">
+            <div className="font-bold md:p-2 py-1 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-400">@tsahil01</div>
+        </a>
+        <button className="rounded-lg md:p-2 py-1 hover:bg-zinc-900 text-sm sm:text-md font-bold">Projects</button>
+        <button className="rounded-lg md:p-2 py-1 hover:bg-zinc-900 text-sm sm:text-md font-bold">Contact</button>
+        <button className="rounded-lg md:p-2 py-1 hover:bg-zinc-900 text-sm sm:text-md font-bold">Resume</button>
     </div>
     </>
 }

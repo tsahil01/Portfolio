@@ -1,8 +1,12 @@
 export function Header(){
     return <>
     <h1 className="text-white md:text-5xl text-4xl font-bold mx-auto lg:w-3/5 w-full">
-        I'm a software engineer that rarely <span className="text-blue-400">writes code.</span>
+    Daily coding as a <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">Developer</span>, always pushing <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-400">code</span>
     </h1>
-    <p className="text-zinc-400 mx-auto lg:w-3/5 w-full text-sm md:text-base mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vitae omnis veritatis dolore! Earum corrupti mollitia, quo aliquid nobis quasi nisi, vero nam porro maxime laborum repellat atque, provident excepturi rerum asperiores delectus enim. Numquam voluptatem reprehenderit molestias deserunt est.</p>
+    <p className="text-zinc-400 mx-auto lg:w-3/5 w-full text-sm md:text-base mt-8">
+    Hi, I'm Sahil, a passionate developer from India. <br/> 
+    I love coding, and I'm really into finding smart solutions to problems. Currently, I'm exploring Web3.
+    Oh, and I'm also a big fan of caffeine; it keeps me going when I'm deep into coding. Let's make some awesome stuff together!
+    </p>
     </>
 }
