@@ -14,7 +14,7 @@ interface ProjectsProps {
 export default function Projects({ projects }: ProjectsProps) {
     return (
         <div className="md:mt-30 mt-10">
-            <h1 className="md:text-4xl text-3xl font-bold">Some Cool Projects</h1>
+            <h1 className="md:text-4xl text-3xl font-bold">Some cool Projects:</h1>
             <div className="mt-4 md:px-5 mb-3">
                 {projects.map((project, key) => (
                     <a href={project.projectUrl} key={key} target='_blank'>
