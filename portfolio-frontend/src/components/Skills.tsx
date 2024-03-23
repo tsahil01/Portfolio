@@ -7,7 +7,7 @@ interface SkillsProps {
 export function Skills({ data }: SkillsProps) {
     return (
         <div className="md:mt-30 mt-10">
-            <h1 className="md:text-4xl text-3xl font-bold">I'm comfortable with</h1>
+            <h1 className="md:text-4xl text-3xl font-bold">I&apos;m comfortable with</h1>
             <div className="grid xl:grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-items-center gap-6 mt-4 mb-3">
                 {data.map((skill, index) => (
                     <SkillsField key={index} field={skill.field} technologies={skill.skill} />

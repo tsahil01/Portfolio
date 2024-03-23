@@ -46,7 +46,7 @@ let myProjects = [
 
 let mySocials = ["https://github.com/tsahil01/", "https://twitter.com/t__sahil/", "https://www.linkedin.com/in/sahil-tiwaskar/"]
 
-export default function(){
+export default function App(){
   return <>
   <div className="flex flex-col gap-5 p-5 justify-center md:w-2/3 w-screen mx-auto overflow-hidden">
     <Navbar />

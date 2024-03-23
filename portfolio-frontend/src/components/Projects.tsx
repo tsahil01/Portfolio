@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 
 interface ProjectProps {
     projectName: string;
@@ -32,7 +33,7 @@ function Project({ data }: { data: ProjectProps }) {
     return (
         <div className='flex flex-col bg-zinc-800 rounded-xl pb-4 justify-center overflow-hidden'>
             <div className='w-full h-full overflow-hidden flex justify-center items-center'>
-                <img className='w-full max-h-full object-cover rounded-xl overflow-hidden' src={data.projectImgUrl} alt="" />
+                <Image className='w-full max-h-full object-cover rounded-xl overflow-hidden' src={data.projectImgUrl} alt="" />
             </div>
             <div className='mt-7 font-bold mx-auto md:text-2xl text-xl'>{data.projectName}</div>
             <div className='mt-1 p-3 text-zinc-400'>{data.projectDescription}</div>
