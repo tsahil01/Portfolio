@@ -60,7 +60,7 @@ export default function(){
     <div className="my-10">
       <Socials/>
     </div>
-    <div className="md:mt-48 mt-10 overflow-hidden">
+    <div className="md:mt-20 mt-10 overflow-hidden">
       <Projects projects={myProjects}/>
     </div>
     <div className="mt-20 overflow-hidden">

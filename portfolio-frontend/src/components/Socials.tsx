@@ -1,10 +1,25 @@
+import { VscGithub } from "react-icons/vsc";
+import { BsTwitterX } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
+
 export function Socials(){
     return <>
-    <div className="p-2 rounded-xl flex flex-row gap-4 drop-shadow-xl justify-center mx-auto">
-        <div className="font-bold md:p-2 py-1 text-blue-400">@tsahil01</div>
-        <button className="rounded-lg md:p-2 py-1 hover:bg-zinc-900">Projects</button>
-        <button className="rounded-lg md:p-2 py-1 hover:bg-zinc-900">Contact</button>
-        <button className="rounded-lg md:p-2 py-1 hover:bg-zinc-900">Resume</button>
+    <div className="flex flex-col gap-1">
+    <div className="my-auto mx-auto text-sm text-zinc-600">
+        My socials: 
+    </div>
+    <div className="rounded-xl flex flex-row gap-1 ustify-center mx-auto my-auto">
+        <a className="rounded-full hover:bg-zinc-800 p-3" href="#">
+            <VscGithub size={25}/>
+        </a>
+        <a className="rounded-full hover:bg-zinc-800 p-3" href="#">
+            <BsTwitterX size={25}/>
+        </a>
+        <a className="rounded-full hover:bg-zinc-800 p-3" href="#">
+            <FaLinkedin size={25}/>
+        </a>
+        
+    </div>
     </div>
     </>
 }
