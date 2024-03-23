@@ -28,7 +28,7 @@ function SkillsField({ field, technologies }: SkillsFieldProps) {
             <div className='font-bold text-zinc-400 md:text-xl text-xl'>{field}</div>
             <div className='grid grid-cols-3 gap-3 my-auto'>
                 {technologies.map((tech, index)=>(
-                    <div key={index} className='bg-zinc-900 p-2 md:text-md text-sm text-center font-bold w-auto rounded-lg'>{tech}</div>
+                    <div key={index} className='bg-zinc-900 p-3 md:text-md text-sm text-center font-semi    bold w-auto rounded-lg'>{tech}</div>
                 ))}
             </div>
         </div>

@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Navbar } from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import { Skills } from "@/components/Skills";
+import { Socials } from "@/components/Socials";
 
 let mySkills = [
   {
@@ -56,7 +57,10 @@ export default function(){
     <div className="flex flex-col md:mt-20 mt-16 overflow-hidden">
       <Header/>
     </div>
-    <div className="mt-20 overflow-hidden">
+    <div className="my-10">
+      <Socials/>
+    </div>
+    <div className="md:mt-48 mt-10 overflow-hidden">
       <Projects projects={myProjects}/>
     </div>
     <div className="mt-20 overflow-hidden">

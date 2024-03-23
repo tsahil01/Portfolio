@@ -15,7 +15,7 @@ export default function Projects({ projects }: ProjectsProps) {
     return (
         <div className="md:mt-30 mt-10">
             <h1 className="md:text-4xl text-3xl font-bold">Some Cool Projects</h1>
-            <div className="mt-4 px-5 mb-3">
+            <div className="mt-4 md:px-5 mb-3">
                 {projects.map((project, key) => (
                     <a href={project.projectUrl} key={key} target='_blank'>
                         <div className='mt-5 lg:w-2/3 mx-auto transform translate-y-2 hover:translate-y-0 duration-500 ease-in-out hover:shadow-xl'>
