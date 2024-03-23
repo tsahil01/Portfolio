@@ -37,7 +37,7 @@ function Project({ data }: { data: ProjectProps }) {
                     <Image className='w-full max-h-full object-cover rounded-xl overflow-hidden' layout='responsive' width={100} height={50} src={data.projectImgUrl} alt="" />
                 )}
             </div>
-            <div className='mt-7 font-bold mx-auto md:text-2xl text-xl px-4'>{data.projectName}</div>
+            <div className='mt-7 font-bold md:text-2xl text-xl px-4'>{data.projectName}</div>
             <div className='mt-1 p-3 text-zinc-400'>{data.projectDescription}</div>
         </div>
     );
