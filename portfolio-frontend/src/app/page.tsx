@@ -44,23 +44,23 @@ let myProjects = [
   },
   {
     projectName: "Real Time Chat Application",
-    projectDescription: "A Chat application made using nextjs.",
+    projectDescription: "lorem",
     projectImgUrl: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*sUrmVEH3GzIRdgPCOMQ7lw.png"
   }
 ]
 
 export default function(){
   return <>
-  <div className="flex flex-col gap-5 p-5 justify-center md:w-2/3 w-screen mx-auto">
+  <div className="flex flex-col gap-5 p-5 justify-center md:w-2/3 w-screen mx-auto overflow-hidden">
     <Navbar />
-    <div className="flex flex-col md:mt-20 mt-16">
+    <div className="flex flex-col md:mt-20 mt-16 overflow-hidden">
       <Header/>
     </div>
-    <div className="mt-20">
-      <Skills data={mySkills}/>
-    </div>
-    <div className="mt-10">
+    <div className="mt-20 overflow-hidden">
       <Projects projects={myProjects}/>
+    </div>
+    <div className="mt-20 overflow-hidden">
+      <Skills data={mySkills}/>
     </div>
   </div>
   </>
