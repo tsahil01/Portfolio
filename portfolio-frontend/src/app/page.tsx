@@ -1,5 +1,4 @@
 import { Header } from "@/components/Header";
-import { Navbar } from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import { Skills } from "@/components/Skills";
 import { Socials } from "@/components/Socials";
@@ -48,8 +47,6 @@ let mySocials = ["https://github.com/tsahil01/", "https://twitter.com/t__sahil/"
 
 export default function App(){
   return <>
-  <div className="flex flex-col gap-5 p-5 justify-center md:w-2/3 w-screen mx-auto overflow-hidden">
-    <Navbar />
     <div className="flex flex-col md:mt-20 mt-16 overflow-hidden">
       <Header/>
     </div>
@@ -62,6 +59,5 @@ export default function App(){
     <div className="mt-20 overflow-hidden">
       <Skills data={mySkills}/>
     </div>
-  </div>
   </>
 }
