@@ -1,5 +1,9 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image'
+import { RecoilRoot, useRecoilValue } from 'recoil';
+import { projectsAtom } from '@/atoms/projectsAtom';
 
 interface ProjectProps {
     projectName: string;
@@ -8,21 +12,27 @@ interface ProjectProps {
     projectUrl?: string;
 }
 
-interface ProjectsProps {
-    projects: ProjectProps[];
+export default function Projects(){
+    return <>
+    <RecoilRoot>
+        <Pro/>
+    </RecoilRoot>
+    </>
 }
 
-export default function Projects({ projects }: ProjectsProps) {
+export function Pro() {
+    const allProjects: ProjectProps[]   = useRecoilValue(projectsAtom);
+    const visibleProjects: ProjectProps[] = allProjects.slice(0, 3);
     return (
         <div className="md:mt-30 mt-10">
             <h1 className="md:text-4xl text-3xl font-bold">Some cool<span className='text-blue-400'> Projects</span>:</h1>
             <div className="mt-4 md:px-5 mb-3">
-                {projects.map((project, key) => (
-                    <a href={project.projectUrl} key={key} target='_blank'>
-                        <div className='mt-5 lg:w-2/3 mx-auto transform translate-y-2 hover:translate-y-0 duration-500 ease-in-out hover:shadow-xl'>
+                {visibleProjects.map((project, key) => (
+                    <div className='mt-5 lg:w-2/3 mx-auto transform translate-y-2 hover:translate-y-0 duration-500 ease-in-out hover:shadow-xl'>
+                        <a href={project.projectUrl} key={key} target='_blank'>
                             <Project data={project} />
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 ))}
             </div>
         </div>

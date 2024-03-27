@@ -13,7 +13,7 @@ export function Chat() {
         <>
             <div className="fixed right-4 md:right-10 bottom-5 flex flex-col items-end z-[99999]">
                 <button 
-                    className="bg-zinc-700 w-14 h-14 rounded-full flex items-center justify-center hover:scale-105 hover:shadow-xl transition duration-200 shadow-lg"
+                    className="bg-zinc-950 w-14 h-14 rounded-full flex items-center justify-center hover:scale-105 hover:shadow-xl transition duration-200 shadow-lg"
                     onClick={toggleChat}
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 text-zinc-100">
@@ -28,9 +28,9 @@ export function Chat() {
 
 function Contact() {
     return (
-        <div className="fixed right-4 md:right-10 bottom-20 flex flex-col items-end z-[99999] bg-zinc-800 rounded-lg">
-            <div className='flex flex-col p-4'>
-                <div className='text-2xl font-bold text-center'>Contact</div>
+        <div className="fixed right-4 md:right-10 bottom-20 mb-5 flex flex-col items-end z-[99999] bg-zinc-950 rounded-xl">
+            <div className='flex flex-col md:p-4 p-2'>
+                <div className='text-3xl font-bold text-center mb-5'>Contact</div>
                 <div className='flex flex-col p-3 gap-2'>
                     <div className='text-md'>Enter your Email:</div>
                     <input type="text" placeholder='sahil@gmail.com' name="" id="" className='rounded-md bg-zinc-900 p-1 outline-none'/>
@@ -38,6 +38,9 @@ function Contact() {
                 <div className='flex flex-col p-3 gap-2'>
                     <div className='text-md'>Enter your Query:</div>
                     <textarea name="" placeholder='You are awesome' id="" className='rounded-md bg-zinc-900 p-1 outline-none'/>
+                </div>
+                <div className='flex flex-col p-3 gap-2'>
+                    <button className='p-2 bg-white text-black rounded-xl font-bold hover:bg-zinc-300'>Send</button>
                 </div>
             </div>
         </div>

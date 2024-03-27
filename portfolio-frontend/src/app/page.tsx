@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import Projects from "@/components/Projects";
+import Projects from "@/components/AllProjects";
 import { Skills } from "@/components/Skills";
 import { Socials } from "@/components/Socials";
 
@@ -54,7 +54,7 @@ export default function App(){
       <Socials socials = {mySocials}/>
     </div>
     <div className="md:mt-20 mt-10 overflow-hidden">
-      <Projects projects={myProjects}/>
+      <Projects/>
     </div>
     <div className="mt-20 overflow-hidden">
       <Skills data={mySkills}/>
