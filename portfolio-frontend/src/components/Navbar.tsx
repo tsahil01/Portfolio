@@ -16,11 +16,11 @@ export function Navbar(){
         <a href="https://github.com/tsahil01" target="_blank">
             <div className="font-bold md:p-2 py-1 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-400">@tsahil01</div>
         </a>
-        <button className="rounded-lg md:p-2 py-1 hover:bg-zinc-900 text-sm sm:text-md font-bold" onClick={()=>router.push('/projects')}>Projects</button>
-        <button className="rounded-lg md:p-2 py-1 hover:bg-zinc-900 text-sm sm:text-md font-bold"
+        <button className="rounded-lg p-2 py-1 hover:bg-zinc-900 text-sm sm:text-md font-bold" onClick={()=>router.push('/projects')}>Projects</button>
+        <button className="rounded-lg p-2 py-1 hover:bg-zinc-900 text-sm sm:text-md font-bold"
         onClick={toggleChat}
         >Contact</button>
-        <button className="rounded-lg md:p-2 py-1 hover:bg-zinc-900 text-sm sm:text-md font-bold">Resume</button>
+        <button className="rounded-lg p-2 py-1 hover:bg-zinc-900 text-sm sm:text-md font-bold">Resume</button>
     </div>
     {showChat && <Contact />}
     </>
