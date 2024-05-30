@@ -3,6 +3,12 @@ import { atom } from "recoil";
 export const projectsAtom = atom({
     key: "projectsAtom",
     default: [
+      {
+        projectName: "QuickShare: Effortlessly Share Your Files Anywhere",
+        projectDescription: "Simplify your file sharing experience with our intuitive platform. Seamlessly upload, share, and access your files anytime, anywhere. Start sharing smarter today!",
+        projectImgUrl: "https://utfs.io/f/6147cf8f-2de0-4544-af4c-111c5ffa1806-164h3x.png",
+        projectUrl: "https://ezfiles.vercel.app/"
+      },
         {
           projectName: "Eznote: Markdown Writer App",
           projectDescription: "A ReactJS-based tool for real-time Markdown editing and previewing. With a split-screen layout and user-friendly interface, effortlessly create and format Markdown content. ",
