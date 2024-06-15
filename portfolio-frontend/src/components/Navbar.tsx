@@ -20,7 +20,7 @@ export function Navbar(){
         <button className="rounded-lg p-2 py-1 hover:bg-zinc-900 text-sm sm:text-md font-bold"
         onClick={toggleChat}
         >Contact</button>
-        <button className="rounded-lg p-2 py-1 hover:bg-zinc-900 text-sm sm:text-md font-bold">Resume</button>
+        <button className="rounded-lg p-2 py-1 hover:bg-zinc-900 text-sm sm:text-md font-bold" onClick={()=>{window.open("https://docs.google.com/document/d/14kn9LgLzVbkC4kCwDobLUjXMyT58U1w5CavVtNQ51UM/edit?usp=sharing")}}>Resume</button>
     </div>
     {showChat && <Contact />}
     </>
