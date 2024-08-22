@@ -5,6 +5,14 @@ export const projectsAtom = atom({
   default: [
     {
       projectName:
+        "Pouch: An open-source HD wallet generator for Sol and Eth.",
+      projectDescription:
+        "An open-source HD wallet generator for Sol and Eth.",
+      projectImgUrl: "/pouch.png",
+      projectUrl: "https://web3pouch.vercel.app/",
+    },
+    {
+      projectName:
         "Web-Dock PlayGround: Spin Up Your Favourite Development Environment",
       projectDescription:
         "A SaaS platform enabling instant access to Ubuntu Docker containers with pre-installed tools and languages, including VSCode, all from the browser, with automatic disposal after use.",
