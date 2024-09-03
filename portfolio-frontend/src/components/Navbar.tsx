@@ -21,7 +21,7 @@ export function Navbar(){
         <button className="rounded-lg md:p-2 p-1 py-1 hover:bg-zinc-900 text-xs md:text-md font-bold"
         onClick={toggleChat}
         >Contact</button>
-        <button className="rounded-lg md:p-2 p-1 py-1 hover:bg-zinc-900 text-xs md:text-md font-bold" onClick={()=>{window.open("https://docs.google.com/document/d/14kn9LgLzVbkC4kCwDobLUjXMyT58U1w5CavVtNQ51UM/edit?usp=sharing")}}>Resume</button>
+        <button className="rounded-lg md:p-2 p-1 py-1 hover:bg-zinc-900 text-xs md:text-md font-bold" onClick={()=>{window.open("https://docs.google.com/document/d/1KzpBTrTm0qQoNl8qvTCcK41wSoqk6aIQ4hHEO8pZ6TM/edit?usp=sharing")}}>Resume</button>
     </div>
     {showChat && <Contact />}
     </>
