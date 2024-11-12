@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import Projects from "@/components/AllProjects";
 import { Skills } from "@/components/Skills";
 import { Socials } from "@/components/Socials";
+import { GithubGraph } from "@/components/ui/github";
 
 let mySkills = [
   {
@@ -14,13 +15,13 @@ let mySkills = [
   },
   {
     field: "Database",
-    skill : ["PostgreSQL", "MongoDB", "Prisma"]
+    skill: ["PostgreSQL", "MongoDB", "Prisma"]
   },
   {
     field: "Devops",
     skill: ["Docker", "Azure", "Aws", "Git"]
   }
-  ]
+]
 
 let myProjects = [
   {
@@ -45,19 +46,28 @@ let myProjects = [
 
 let mySocials = ["https://github.com/tsahil01/", "https://twitter.com/t__sahil/", "https://www.linkedin.com/in/sahil-tiwaskar/"]
 
-export default function App(){
+export default function App() {
   return <>
-    <div className="flex flex-col md:mt-20 mt-16 overflow-hidden">
-      <Header/>
+    <div className="flex flex-col md:mt-20 mt-16 overflow-hidden p-5">
+      <Header />
     </div>
     <div className="my-10">
-      <Socials socials = {mySocials}/>
+      <Socials socials={mySocials} />
     </div>
+      <div className="mx-auto md:m-5 justify-center flex ">
+        <div className="rounded-2xl bg-slate-950 p-3">
+          <GithubGraph
+            username="tsahil01"
+            blockMargin={4}
+            colorPallete={["#1e1e2f", "#5a3e7a", "#7e5aa2", "#a87cc3", "#d9a9e6"]}
+          />
+        </div>
+      </div>
     <div className="md:mt-20 mt-10 overflow-hidden">
-      <Projects/>
+      <Projects />
     </div>
     <div className="mt-20 overflow-hidden">
-      <Skills data={mySkills}/>
+      <Skills data={mySkills} />
     </div>
   </>
 }
